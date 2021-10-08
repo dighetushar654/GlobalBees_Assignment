@@ -7,11 +7,10 @@
     function oppositeNumbers(arr) {
         for(let i = 0; i<arr.length; i++){
             for(let j= 0; j<arr.length; j++){
-                if(Math.sign(arr[j]) == -1){
-                    if(Math.sign(arr[i]) == 1 &&  Math.sign(arr[j]) == -1){
-                        if(arr[i] == Math.abs(arr[j])){
-                             console.log(arr[i], arr[j])
-                        }
+                if(Math.sign(arr[i]) == -1){
+                    if(Math.sign(arr[i]) == -1 &&  Math.sign(arr[j]) == 1){
+                        if(arr[j] == Math.abs(arr[i]))
+                            console.log(arr[i], arr[j])
                     }
                 }
             }
